@@ -53,7 +53,7 @@ const Pricing = () => {
             {plans.map((plan) => (
               <div
                 key={plan.id}
-                className="bg-gray-800 p-6 rounded-lg shadow-lg w-full"
+                className="bg-gray-800 p-6 rounded-lg shadow-lg w-full flex flex-col gap-4"
               >
                 <h3 className="text-2xl font-semibold mb-2">{plan.name}</h3>
                 <p className="text-lg mb-4">
@@ -62,7 +62,7 @@ const Pricing = () => {
                 <p className="mb-4">{plan.description}</p>
                 <Link
                   href={plan.price ? "/auth/ssignup" : "/contact"}
-                  className="px-6 py-3 font-bold text-white bg-indigo-600 rounded hover:bg-indigo-500 transition mt-8"
+                  className="px-6 py-3 font-bold text-white bg-indigo-600 rounded hover:bg-indigo-500 transition"
                 >
                   {plan.price ? "Sign Up" : "Contact Us"}
                 </Link>
