@@ -53,7 +53,7 @@ const Pricing = () => {
             {plans.map((plan) => (
               <div
                 key={plan.id}
-                className="bg-gray-800 p-6 rounded-lg shadow-lg"
+                className="bg-gray-800 p-6 rounded-lg shadow-lg w-full"
               >
                 <h3 className="text-2xl font-semibold mb-2">{plan.name}</h3>
                 <p className="text-lg mb-4">
