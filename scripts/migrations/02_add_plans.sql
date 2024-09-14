@@ -9,7 +9,6 @@ INSERT INTO plans (name, description, price)
 VALUES
     ('Basic', 'Access to basic features and 7 days free trial.', 10),
     ('Pro', 'Includes all features, plus premium support and advanced analytics.', 30),
-    ('Enterprise', 'Custom solutions for large organizations with dedicated support.', 0) 
 ON CONFLICT (name) 
 DO UPDATE SET
     description = EXCLUDED.description,

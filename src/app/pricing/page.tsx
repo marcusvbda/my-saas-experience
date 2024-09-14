@@ -42,7 +42,7 @@ const Pricing = () => {
       <Navbar />
       <main className="flex-grow container mx-auto p-4">
         <section className="text-center">
-          <h2 className="text-4xl font-bold mb-6">Pricing Plans</h2>
+          <h2 className="text-4xl font-bold mb-6 mt-10">Pricing Plans</h2>
           {loading && (
             <div className="flex justify-center items-center min-h-[200px]">
               <div className="spinner"></div>
@@ -62,7 +62,7 @@ const Pricing = () => {
                 <p className="mb-4">{plan.description}</p>
                 <Link
                   href={plan.price ? "/auth/ssignup" : "/contact"}
-                  className="px-6 py-3 font-bold text-white bg-indigo-600 rounded hover:bg-indigo-500 transition"
+                  className="px-6 py-3 font-bold text-white bg-indigo-600 rounded hover:bg-indigo-500 transition mt-8"
                 >
                   {plan.price ? "Sign Up" : "Contact Us"}
                 </Link>
