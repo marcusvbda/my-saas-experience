@@ -42,10 +42,9 @@ const ResetPassword = () => {
         setError(data.message);
       } else {
         setMessage("Password successfully reset.");
-        // Wait 2 seconds before redirecting
         setTimeout(() => {
           router.push("/auth/login");
-        }, 2000);
+        }, 1000);
       }
     } catch (error) {
       setError("An unexpected error occurred");

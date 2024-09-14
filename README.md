@@ -66,4 +66,5 @@ To get started with this project, follow these steps:
 - **TypeScript**: Typed JavaScript for better tooling and safer code.
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **Sass**: CSS preprocessor for better style management.
+- **Supabase** Open source Firebase alternative. Start your project with a Postgres database
 ```

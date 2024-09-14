@@ -37,10 +37,9 @@ const Signup = () => {
         );
         setRedirecting(true);
 
-        // Wait 2 seconds before redirecting
         setTimeout(() => {
           router.push("/application");
-        }, 2000);
+        }, 1000);
       }
     } catch (error) {
       setError("An unexpected error occurred");

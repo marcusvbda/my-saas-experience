@@ -61,7 +61,7 @@ const Pricing = () => {
                 </p>
                 <p className="mb-4">{plan.description}</p>
                 <Link
-                  href={plan.price ? "/signup" : "/contact"}
+                  href={plan.price ? "/auth/ssignup" : "/contact"}
                   className="px-6 py-3 font-bold text-white bg-indigo-600 rounded hover:bg-indigo-500 transition"
                 >
                   {plan.price ? "Sign Up" : "Contact Us"}

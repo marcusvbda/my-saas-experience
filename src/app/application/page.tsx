@@ -14,6 +14,7 @@ export default async function Dashboard() {
       <main className="flex-grow container mx-auto p-4">
         <h1 className="text-3xl font-bold mb-4">Dashboard</h1>
         <small className="text-lg">Welcome, {user?.email}</small>
+        {/* select plan here */}
       </main>
       <Footer />
     </div>

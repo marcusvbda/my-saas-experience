@@ -25,10 +25,9 @@ const ForgotPassword = () => {
       } else {
         setMessage("Password reset link sent to your email.");
         setRedirecting(true);
-        // Wait 2 seconds before redirecting
         setTimeout(() => {
           router.push("/auth/login");
-        }, 2000);
+        }, 1000);
       }
     } catch (error) {
       setError("An unexpected error occurred");
